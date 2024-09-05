@@ -27,8 +27,13 @@ namespace MyFirstProgram
 
             int y = 321;
 
+            int z = x + y;
+
+            int age = 19;
+
             Console.WriteLine(x);
             Console.WriteLine(y);
+            Console.WriteLine(z);
 
             Console.ReadKey(); //program would not end until key is hit
         }
