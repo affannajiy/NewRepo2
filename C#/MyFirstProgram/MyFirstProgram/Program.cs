@@ -23,6 +23,7 @@ namespace MyFirstProgram
             Console.WriteLine("Af\bfan"); //backspace
 
             int x;
+            int y;
 
             Console.ReadKey(); //program would not end until key is hit
         }
