@@ -22,6 +22,8 @@ namespace MyFirstProgram
             Console.WriteLine("\t'Affan"); //tab for indent
             Console.WriteLine("Af\bfan"); //backspace
 
+            int x;
+
             Console.ReadKey(); //program would not end until key is hit
         }
     }
