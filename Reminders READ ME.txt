@@ -1,0 +1,12 @@
+Note to self while using 
+VB:
+1)
+i. To Change the Form name, you must click the form and change the name at the (Name) section
+ii. Then go to the 'File Properties' at the bottom right to change the whole Windows form name to the same name given at the (Name) section at the beningging.
+iii. Then error will occur, hopefully. Then go to the error code line and change the 'Form1' to the name given in (Name)
+iv. And hopefully... it will be fine.
+
+#save everything after you go step after step. [Ctrl + S]
+
+2) Set the form to start up at CenterScreen
+
