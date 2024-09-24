@@ -10,4 +10,3 @@ public class Date //Class is like a Blueprint/Template
     public int month;
     public int year;
 }
-

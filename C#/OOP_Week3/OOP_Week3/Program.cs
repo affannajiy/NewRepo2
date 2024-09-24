@@ -12,6 +12,6 @@ class Program
         transaction.setDate(new DateTime(2008, 6, 1, 9, 16, 37));
         transaction.setVal(10.5f);
 
-        Console.WriteLine("transaction value is " + transaction.getVal() + " at time " + transaction.getDate().ToString());
+        Console.WriteLine("Transaction Value: " + transaction.getVal() + " ,Time " + transaction.getDate().ToString());
     }
 }
