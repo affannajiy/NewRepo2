@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.login_signupBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.login_showPass = new System.Windows.Forms.CheckBox();
             this.login_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,15 +58,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(249, 400);
             this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::EmployeeManagementSystem.Properties.Resources.Employee_Icon;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
             // 
             // label6
             // 
@@ -95,6 +86,7 @@
             this.login_signupBtn.TabIndex = 10;
             this.login_signupBtn.Text = "SIGN UP";
             this.login_signupBtn.UseVisualStyleBackColor = false;
+            this.login_signupBtn.Click += new System.EventHandler(this.login_signupBtn_Click);
             // 
             // label5
             // 
@@ -154,6 +146,7 @@
             this.login_password.Location = new System.Drawing.Point(271, 218);
             this.login_password.Multiline = true;
             this.login_password.Name = "login_password";
+            this.login_password.PasswordChar = '*';
             this.login_password.Size = new System.Drawing.Size(283, 30);
             this.login_password.TabIndex = 6;
             // 
@@ -177,6 +170,7 @@
             this.login_showPass.TabIndex = 7;
             this.login_showPass.Text = "Show Password";
             this.login_showPass.UseVisualStyleBackColor = true;
+            this.login_showPass.CheckedChanged += new System.EventHandler(this.login_showPass_CheckedChanged);
             // 
             // login_btn
             // 
@@ -194,6 +188,16 @@
             this.login_btn.TabIndex = 8;
             this.login_btn.Text = "LOGIN";
             this.login_btn.UseVisualStyleBackColor = false;
+            this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::EmployeeManagementSystem.Properties.Resources.Employee_Icon;
+            this.pictureBox1.Location = new System.Drawing.Point(76, 50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
