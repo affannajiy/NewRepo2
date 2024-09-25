@@ -13,16 +13,14 @@ class Program
         int num = Int32.Parse(numStr); //cast from string to int
 
         for (int i = 0; i < 10; i++) {
-            
+            Transaction transaction;
+            transaction = new Transaction(); // creating an object (variable of a certain class type)
+
+            transaction.setDate(new DateTime(2008, 6, 1));
+
+            transaction.setVal(10.5f);
+
+            Console.WriteLine("transaction value is " + transaction.setVal + " at time " + transaction.setDate.ToString());
         }
-        // creating an object (variable of a certain class type)
-        Transaction transaction = new Transaction();
-
-        transaction.setDate(new DateTime(2008, 6, 1));
-
-        transaction.val = -10.5f;
-
-        Console.WriteLine("transaction value is " + transaction.val + " at time " + transaction.date.ToString());
     }
-
 }
