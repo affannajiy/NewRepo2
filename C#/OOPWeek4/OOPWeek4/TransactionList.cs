@@ -10,8 +10,14 @@ namespace OOPWeek4
     {
         //data
         private Transaction[] transactions; //array: DatType[] arrayName, transactions is an array object
-        
+        private int numTransactions;
+
         //operation
         public void Init(int size) { transactions = new Transaction[size]; }
+
+        public void Add()
+        {
+
+        }
     }
 }
