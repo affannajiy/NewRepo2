@@ -18,13 +18,14 @@ namespace OOPWeek4
         public void Add(Transaction transaction) // add an object to an array
         {
             transactions[numTransactions] = transaction;
+            numTransactions++;
         }
 
         public void Display()
         { 
             for (int i = 0; i < numTransactions; i++) //for loop
             {
-                Console.WriteLine(transactions[i]);
+                Console.WriteLine(transactions[i].ToString());
             }
         }
     }
