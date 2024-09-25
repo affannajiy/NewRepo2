@@ -15,9 +15,17 @@ namespace OOPWeek4
         //operation
         public void Init(int size) { transactions = new Transaction[size]; }
 
-        public void Add()
+        public void Add(Transaction transaction) // add an object to an array
         {
+            transactions[numTransactions] = transaction;
+        }
 
+        public void Display()
+        { 
+            for (int i = 0; i < numTransactions; i++)
+            {
+                Console.WriteLine(transactions[i]);
+            }
         }
     }
 }

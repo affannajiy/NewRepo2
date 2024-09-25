@@ -28,5 +28,7 @@ class Program
 
             Console.WriteLine("transaction value is " + transaction.setVal + " at time " + transaction.setDate.ToString());
         }
+
+        trans.Display(); // displaying list
     }
 }
