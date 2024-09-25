@@ -10,11 +10,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("How many transactions todday?");
+        Console.WriteLine("How many transactions today?");
         string numStr = Console.ReadLine(); 
         int num = Int32.Parse(numStr); //cast from string to int
 
-        TransactionList trans = new TransactionList();
+        TransactionList trans = new TransactionList(num);
         trans.Init(num); // initializing list
 
         for (int i = 0; i < 10; i++) {
