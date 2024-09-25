@@ -22,7 +22,7 @@ namespace OOPWeek4
 
         public void Display()
         { 
-            for (int i = 0; i < numTransactions; i++)
+            for (int i = 0; i < numTransactions; i++) //for loop
             {
                 Console.WriteLine(transactions[i]);
             }
