@@ -1,11 +1,28 @@
 ﻿// See https://aka.ms/new-console-template for more 
 /*
-int myNum = 12345;
-string myName = "Azz Cafe";
+int myNum = 220101017;
 
-Console.WriteLine(Convert.ToInt32(myNum));
 Console.WriteLine(Convert.ToString(myNum));
-Console.WriteLine(Convert.ToChar(myName));
+*/
+
+/*
+double CGPA = 4.01;
+
+Console.WriteLine(Convert.ToDouble(CGPA));
+*/
+
+/*
+bool value = true;
+Console.WriteLine(Convert.ToString(value));
+*/
+
+/*
+int x = 2;
+Console.WriteLine(x &= 3); //2
+Console.WriteLine(x |= 3); //3
+Console.WriteLine(x ^= 3); //0
+Console.WriteLine(x >>= 3); //0
+Console.WriteLine(x <<= 3); //0
 */
 
 /*
@@ -55,7 +72,28 @@ else
 }
 */
 
+/*
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("Hello Iman Hazim");
 }
+*/
+
+/*
+int[] marks = new int[10];
+int sum = 0;
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine("What are the student marks?");
+    marks[i] = Convert.ToInt32(Console.ReadLine());
+    sum += marks[i];
+}
+
+Console.WriteLine("Total marks: " + sum);
+*/
+
+int[,] val = { { 1, 2, 3 }, 
+               { 4, 5, 6 }, 
+               { 7, 8, 9 } };
+
+Console.WriteLine(val[1, 2]);
