@@ -1,99 +1,98 @@
-﻿// See https://aka.ms/new-console-template for more 
-/*
-int myNum = 220101017;
+﻿//'Affan 22010453 (OOP_LabW4)
 
-Console.WriteLine(Convert.ToString(myNum));
-*/
+//1 ---------------------------------------------------------------
+int matricNum = 22010453;
+Console.WriteLine(Convert.ToString(matricNum));
 
-/*
-double CGPA = 4.01;
+float cgpa = 3.98f;//f for float
+Console.WriteLine(Convert.ToInt32(cgpa));
+Console.Write("\n");
 
-Console.WriteLine(Convert.ToDouble(CGPA));
-*/
-
-/*
+//2 ----------------------------------------------------------------
 bool value = true;
 Console.WriteLine(Convert.ToString(value));
-*/
 
-/*
-int x = 2;
-Console.WriteLine(x &= 3); //2
+char grade = 'A';
+Console.WriteLine(Convert.ToString(grade));
+Console.Write("\n");
+
+//3 ----------------------------------------------------------------
+int x = 8; //declare
+//AND
+Console.WriteLine(x &= 3); //0
+
+//OR
 Console.WriteLine(x |= 3); //3
+
+//XOR
 Console.WriteLine(x ^= 3); //0
+
+//Left Shift
 Console.WriteLine(x >>= 3); //0
+
+//Right Shift
 Console.WriteLine(x <<= 3); //0
-*/
+Console.Write("\n");
 
-/*
-int x = 5;
-Console.WriteLine(x > 3 && x < 10);
-
-Console.WriteLine("Ahoy There, What is your name?");
-string username = Console.ReadLine();
-Console.WriteLine("\nHello " + username + "!");
-Console.WriteLine("Pirate Status: Active");
-
-//
-if (username == "Iman Hazim" )
+//4 ---------------------------------------------------------------
+Console.Write("What is your age? ");
+int userAge = Convert.ToInt32(Console.ReadLine());
+int myAge = 19;
+if (!(userAge >= myAge))
 {
-    Console.WriteLine("You are Muse!");
-    Console.WriteLine("Boom Shakalaka!");
+    Console.WriteLine("You are not older than 19 years old!");
 }
+else
+{
+    Console.WriteLine("You are older than 19 years old!");
+}
+Console.Write("\n");
 
-string text = "Iman Hazim Ahmed Sulastry";
-Console.WriteLine("The Length of String is " + text.Length);
-*/
+//5 ---------------------------------------------------------------
+string studentName = "Affan";
+Console.WriteLine("Length of Name: " + studentName.Length); //calculate length of string
+Console.Write("\n");
 
-/*
+//6 ---------------------------------------------------------------
 string firstName = "Dior";
 string lastName = "Savage";
 string name = $"My favourite perfume is: {firstName} {lastName}"; //parking lot method
 Console.WriteLine(name);
-*/
+Console.Write("\n");
 
-/*
-string txt = "We are the so-called \"Vikings\" from the north.";
-Console.WriteLine(txt);
-*/
-
-/*
-Console.WriteLine("What is your age?");
-int input = Convert.ToInt32(Console.ReadLine());
-int imanAge = 19;
-
-if (input >= imanAge)
+//7 ---------------------------------------------------------------
+Console.Write("Your Score: ");
+int score = Convert.ToInt32(Console.ReadLine());
+if (score >= 40 && score <= 100)
 {
-    Console.WriteLine("You are older than Iman Hazim!");
+    Console.WriteLine("You Pass!");
 }
 else
 {
-    Console.WriteLine("You are younger than Iman Hazim!");
+    Console.WriteLine("You Fail!");
 }
-*/
+Console.Write("\n");
 
-/*
-for (int i = 0; i < 10; i++)
-{
-    Console.WriteLine("Hello Iman Hazim");
-}
-*/
-
-/*
-int[] marks = new int[10];
+//8 ---------------------------------------------------------------
+int[] marks = new int[10]; //10 spaces marks array
 int sum = 0;
 for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("What are the student marks?");
+    Console.Write("What is Student " + (i + 1) + " marks? ");
+    if (i == 4)
+    {
+        Console.WriteLine("Student is on MC!");
+        continue;
+    }
     marks[i] = Convert.ToInt32(Console.ReadLine());
     sum += marks[i];
 }
+Console.WriteLine("Total Marks: " + sum);
+Console.Write("\n");
 
-Console.WriteLine("Total marks: " + sum);
-*/
+//9 ---------------------------------------------------------------
+int[,] matrix = { { 1, 2, 3 }, //2D array
+                  { 4, 5, 6 }, 
+                  { 7, 8, 9 } };
 
-int[,] val = { { 1, 2, 3 }, 
-               { 4, 5, 6 }, 
-               { 7, 8, 9 } };
-
-Console.WriteLine(val[1, 2]);
+Console.WriteLine("Item at (1, 3):" + matrix[0, 2]);
