@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP_W5
 {
-    internal class Worker
+    internal class Position
     {
-        //Username
-        //Position
-        //Movement
-        //Avatar or Skin
+        public float X { get; set; }
+        public float Y { get; set; }
     }
 }
