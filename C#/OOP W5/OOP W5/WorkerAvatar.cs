@@ -11,9 +11,9 @@ namespace OOP_W5 //packages
         public string Name { get; set; }
         public string Description { get; set; }
         public int ID { get; set; }
-        public Position CurrPosition { get; set; }
+        public float CurrPosition { get; set; }
 
-        public WorkerAvatar(string name, string description, int id, Position position)
+        public WorkerAvatar(string name, string description, int id)
         {
             Name = name;
             Description = description;
