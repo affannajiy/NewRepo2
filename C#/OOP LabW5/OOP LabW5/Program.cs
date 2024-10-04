@@ -52,3 +52,14 @@ CISD("John", 22010101, "Computer Science");
  *   This is achieved by using abstract keyword.
  *   This makes the class abstract and cannot be instantiated.
  */
+
+//3 -------------------------------------------------------
+/*What are Enums, Files, and Exceptions?
+ * Enums:
+ *   Enums are used to define a set of named constants.
+ *   An enum is a user-defined type that consists of a collection of constants.
+ * Files:
+ *   Files are used to store data in a computer.
+ *  Exceptions:
+ *   Exceptions are errors that occur during the execution of a program.
+ */
