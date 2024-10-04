@@ -41,3 +41,14 @@ static void CISD(string name, int ID, string course)
 }
 
 CISD("John", 22010101, "Computer Science");
+
+//2 -------------------------------------------------------
+/*Difference between Encapsulation and Abstract
+ * Encapsulation:
+ *   Encapsulation is the process of wrapping data and the methods that work on the data within one unit.
+ *   This puts restrictions on accessing the data only through the declared methods.
+ * Abstract:
+ *   Abstract is a process of hiding the implementation details and showing only the functionality to the user.
+ *   This is achieved by using abstract keyword.
+ *   This makes the class abstract and cannot be instantiated.
+ */
