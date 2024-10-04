@@ -59,7 +59,21 @@ CISD("John", 22010101, "Computer Science");
  *   Enums are used to define a set of named constants.
  *   An enum is a user-defined type that consists of a collection of constants.
  * Files:
- *   Files are used to store data in a computer.
+ *   File class from the System.IO namespace, allows us to work with files.
+ *   Methods for creating and getting information about files.
+ *      AppendText() -> Appends text at the end of an existing file. 
+ *      Copy() -> Copies a file. 
+ *      Create() -> Creates/overwrites a file.
+ *      Delete() -> Deletes a file.
+ *      Exists() -> Determines if a file exists.
+ *      ReadAllText() -> Reads the contents of a file.
+ *      Replace() -> Replaces the contents of a file with the contents of another file. 
+ *      WriteAllText() -> Creates a new file and writes the contents to it. If the file already exists, it will be overwritten.
  *  Exceptions:
  *   Exceptions are errors that occur during the execution of a program.
+ *   KEYWORDS;
+ *   try:
+ *       statement allows you to test a block of code for errors while executing it.
+ *   catch:
+ *       statement defines a block of code to be executed if an error occurs.
  */
