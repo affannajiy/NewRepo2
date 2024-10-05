@@ -1,79 +1,39 @@
-﻿using System.Diagnostics;
-
-/*
-//Functions
-static void MyMethod()
+﻿using OOP_LabW5;
+namespace OOP_LabW5
 {
-    Console.WriteLine("I just got executed!");
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            //1: Calculate Circle Area Class
+            CircleCalculator calc = new CircleCalculator();
+            double radius = 5;
+
+            Console.WriteLine($"Circle Area: {calc.CalculateArea(radius)}");
+
+            //2: UTP Class
+            UTP utp = new UTP("'Affan Najiy", "Computer Science", "C#", " May 2023", 4.0);
+            Console.WriteLine($"Student Name: {utp.Name}");
+            Console.WriteLine($"Department: {utp.Dept}"); 
+            Console.WriteLine($"Course: {utp.Course}");
+            Console.WriteLine($"Intake: {utp.Intake}");
+            Console.WriteLine($"CGPA: {utp.CGPA}");
+
+            //3: Person Class
+            Person person = new Person("Affan", "Najiy", 100);
+            person.Display();
+
+            //4: Student Class
+            Student student = new Student("Affan", 22010453);
+            student.UpdateGPA(4.0);
+            student.Display();
+
+            //5: Shape Class
+            Shape circle = new Circle(5); //(radius)
+            Console.WriteLine($"Circle Area: {circle.CalculateArea()}");
+
+            Shape rectangle = new Rectangle(5, 10); //(width, height)
+            Console.WriteLine($"Rectangle Area: {rectangle.CalculateArea()}");
+        }
+    }
 }
-
-MyMethod();
-
-//Functions with Parameters
-static void NextMethod(string fname, int age)
-{
-    Console.WriteLine(fname + " is " + age);
-}
-
-NextMethod("Liam", 5);
-NextMethod("Jenny", 8);
-NextMethod("Anja", 31);
-
-//Function Overloading
-static int PlusMethodInt(int x, int y)
-{
-    return x + y;
-}
-
-static double PlusMethodDouble(double x, double y)
-{
-    return x + y;
-}
-
-int MyNum1 = PlusMethodInt(8, 5);
-double MyNum2 = PlusMethodDouble(4.3, 6.26);
-*/
-
-//1 -------------------------------------------------------
-static void CISD(string name, int ID, string course)
-{
-    Console.WriteLine(name + " " + ID + " " + course);
-}
-
-CISD("John", 22010101, "Computer Science");
-
-//2 -------------------------------------------------------
-/*Difference between Encapsulation and Abstract
- * Encapsulation:
- *   Encapsulation is the process of wrapping data and the methods that work on the data within one unit.
- *   This puts restrictions on accessing the data only through the declared methods.
- * Abstract:
- *   Abstract is a process of hiding the implementation details and showing only the functionality to the user.
- *   This is achieved by using abstract keyword.
- *   This makes the class abstract and cannot be instantiated.
- */
-
-//3 -------------------------------------------------------
-/*What are Enums, Files, and Exceptions?
- * Enums:
- *   Enums are used to define a set of named constants.
- *   An enum is a user-defined type that consists of a collection of constants.
- * Files:
- *   File class from the System.IO namespace, allows us to work with files.
- *   Methods for creating and getting information about files.
- *      AppendText() -> Appends text at the end of an existing file. 
- *      Copy() -> Copies a file. 
- *      Create() -> Creates/overwrites a file.
- *      Delete() -> Deletes a file.
- *      Exists() -> Determines if a file exists.
- *      ReadAllText() -> Reads the contents of a file.
- *      Replace() -> Replaces the contents of a file with the contents of another file. 
- *      WriteAllText() -> Creates a new file and writes the contents to it. If the file already exists, it will be overwritten.
- *  Exceptions:
- *   Exceptions are errors that occur during the execution of a program.
- *   KEYWORDS;
- *   try:
- *       statement allows you to test a block of code for errors while executing it.
- *   catch:
- *       statement defines a block of code to be executed if an error occurs.
- */
