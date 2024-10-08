@@ -1,0 +1,25 @@
+﻿public class SalesTransaction
+{
+    public string salespersonName { get; set; }
+    public double transactionVal { get; set; }
+    public DateTime Date { get; set; }
+
+    //Constructor
+    public SalesTransaction(string name, double value, DateTime date)
+    {
+        salespersonName = name;
+        transactionVal = value;
+        Date = date;
+    }
+}
+
+public class Sales
+{
+    private List<SalesTransaction> transactions = new List<SalesTransaction>();
+
+    //Method to Add Transaction
+    public void Addtransaction(SalesTransaction transaction)
+    {
+        transactions.Add(transaction);
+    }
+}
