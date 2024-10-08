@@ -23,6 +23,7 @@ public class Sales
         transactions.Add(transaction);
     }
 
+    //Method to Calc Sum
     public double Sum()
     {
         double sum = 0;
