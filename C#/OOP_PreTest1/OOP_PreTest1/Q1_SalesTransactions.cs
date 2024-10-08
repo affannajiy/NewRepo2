@@ -22,4 +22,14 @@ public class Sales
     {
         transactions.Add(transaction);
     }
+
+    public double Sum()
+    {
+        double sum = 0;
+        foreach (var transaction in transactions)
+        {
+            sum += transaction.transactionVal;
+        }
+        return sum;
+    }
 }
