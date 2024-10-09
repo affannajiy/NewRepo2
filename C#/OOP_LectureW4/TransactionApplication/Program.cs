@@ -12,5 +12,8 @@ class Program
 
         TransactionList transactionList = new TransactionList();
         transactionList.Add(transaction);
+
+        Business business = new Business();
+        business.initFirestore();
     }
 }
