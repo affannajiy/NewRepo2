@@ -9,16 +9,10 @@ namespace TransactionPackage //declare the collection where a class belongs to a
 
     public class Transaction
     {
-        private float val;
-        private DateTime date;
+        public float Val { get; set; }
+        public DateTime Date { get; set; }
+        public Employee Employee { get; set; }
 
-        // setter 
-        public void setVal(float val) { this.val = val; }
-        public void setDate(DateTime date) { this.date = date; }
-
-        // getter
-        public float getVal() { return val; }
-        public DateTime getDate() { return date; }
-
+        
     }
 }

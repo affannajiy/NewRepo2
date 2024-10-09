@@ -8,7 +8,7 @@ namespace TransactionPackage
 {
     public class TransactionList
     {
-        private List<Transaction> transactions; //array: DatType[] arrayName, transactions is an array object
+        private List<Transaction> transactions;
         private int numTransactions;
 
         //constructor,
