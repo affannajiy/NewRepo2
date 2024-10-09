@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOPWeek4", "OOPWeek4\OOPWee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionPackage", "TransactionPackage\TransactionPackage.csproj", "{F58525B8-C2F9-4C59-824B-193527B0558A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransactionApplication", "TransactionApplication\TransactionApplication.csproj", "{0A23E3F7-07BF-4768-8A61-625241709C3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F58525B8-C2F9-4C59-824B-193527B0558A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F58525B8-C2F9-4C59-824B-193527B0558A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F58525B8-C2F9-4C59-824B-193527B0558A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A23E3F7-07BF-4768-8A61-625241709C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A23E3F7-07BF-4768-8A61-625241709C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A23E3F7-07BF-4768-8A61-625241709C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A23E3F7-07BF-4768-8A61-625241709C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

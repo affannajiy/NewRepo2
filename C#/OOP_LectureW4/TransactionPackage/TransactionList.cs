@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TransactionPackage
 {
-    internal class TransactionList
+    public class TransactionList
     {
         private List<Transaction> transactions; //array: DatType[] arrayName, transactions is an array object
         private int numTransactions;

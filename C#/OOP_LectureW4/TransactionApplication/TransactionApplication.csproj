@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="TransactionPackage">
+      <HintPath>..\TransactionPackage\bin\Debug\net8.0\TransactionPackage.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
