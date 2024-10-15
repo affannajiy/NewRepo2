@@ -28,9 +28,6 @@ namespace TransactionPackage
             db = FirestoreDb.Create(FIREBASE_PROJID);
             Console.WriteLine("Created Cloud Firestore client with project ID: {0}", FIREBASE_PROJID);
         }
-
-
-
     }
 }
 
