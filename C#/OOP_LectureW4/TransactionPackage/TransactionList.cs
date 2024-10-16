@@ -8,6 +8,8 @@ namespace TransactionPackage
 {
     public class TransactionList
     {
+        public static int MAX = 100; //MAX is static, don't need an object
+        
         private List<Transaction> transactions;
         private int numTransactions;
 

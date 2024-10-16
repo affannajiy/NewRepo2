@@ -11,8 +11,6 @@ namespace TransactionPackage //declare the collection where a class belongs to a
     {
         public float Val { get; set; }
         public DateTime Date { get; set; }
-        public Employee Employee { get; set; }
-
-        
+        public Employee Employee { get; set; } 
     }
 }
