@@ -3,16 +3,13 @@ using TransactionPackage;
 
 class Program
 {
-    static void Main(string[] args) //Static Main
+    static void Main(string[] args)
     {
-        Transaction transaction = new Transaction();
-        transaction.Val = 1;
-        transaction.Date = DateTime.Now;
-        transaction.Employee = new Employee();
+        Transaction transaction = new Transaction(10, DateTime.Now);
+        transaction.Employee = new Employee("Ahmad", "54455");
 
-        Console.WriteLine("Maximum number of transactions allowed = " + TransactionList.MAX);
-
-        TransactionList transactionList = new TransactionList(); //Create Object
+        Console.WriteLine("Max # of transactions allowed = " + TransactionList.MAX);
+        TransactionList transactionList = new TransactionList();
         transactionList.Add(transaction);
 
         Business business = new Business();
@@ -23,7 +20,18 @@ class Program
         //Task is a trading unit, make sure app not freeze
         //Lambda Expression; (async () => await business.SaveTransaction(transaction))
         //Run(): Run in a separate thread
-        var task2 = Task.Run(async () => await business.SaveTransaction(transaction));
-        task2.Wait(); //Blocks until task is done
+        var taskfb = Task.Run(async () => await business.SaveTransaction(transaction));
+        taskfb.Wait(); // Blocks until the task completes
+
+        Transaction transaction2 = new Transaction(500, DateTime.Now);
+        transaction2.Employee = new Employee("Nava", "31158");
+
+        taskfb = Task.Run(async () => await business.SaveTransaction(transaction));
+        taskfb.Wait(); // Blocks until the task completes
+
+        var task = Task.Run(async () => await business.RestoreTransactions());
+        task.Wait(); // Blocks until the task completes
+
+        business.TransList.Display();
     }
 }

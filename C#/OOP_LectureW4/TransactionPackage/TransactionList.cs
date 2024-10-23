@@ -4,43 +4,74 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace TransactionPackage
 {
     public class TransactionList
     {
-        public static int MAX = 100; //MAX is static, don't need an object
-        
-        private List<Transaction> transactions;
-        private int numTransactions;
+        public static int MAX = 100;
 
-        //constructor,
+        //data 
+        public List<Transaction> transactions { set; get; } //transactions is an Array object
+
+        //Constructor
         //1) no return type
-        //2) name same as the class
+        //2) name is that of the class
+        //3) usually used for initialization
         public TransactionList()
         {
             transactions = new List<Transaction>();
         }
 
-        //constructor
         public TransactionList(int num)
         {
-            transactions = new List<Transaction>();
+            transactions = new List<Transaction>(num);
         }
 
-        //operation
-        public void Init(int size) { transactions = new List<Transaction>(); }
+        // operations
+        public void Init(int num)
+        {
+            transactions = new List<Transaction>(num);
+        }
 
-        public void Add(Transaction transaction) // add an object to an array
+        // how to complete this?????
+        public void Add(Transaction transaction)
         {
             transactions.Add(transaction);
         }
 
+        public Transaction Get(string ID)
+        {
+            foreach (Transaction trans in transactions)
+            {
+                if (trans.Id == ID)
+                    return trans;
+            }
+            return null;
+        }
+
         public void Display()
         {
-            for (int i = 0; i < numTransactions; i++) //for loop
+            for (int i = 0; i < transactions.Count; i++)
             {
-                Console.WriteLine(transactions[i].ToString());
+                Console.WriteLine(transactions[i].Val);
             }
+        }
+
+        public float Total()
+        {
+            float total = 0;
+            foreach (Transaction trans in transactions)
+            {
+                total += trans.Val;
+            }
+            return total;
+        }
+
+
+        public void Clear()
+        {
+            transactions.Clear();
         }
     }
 }

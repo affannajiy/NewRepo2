@@ -9,7 +9,13 @@ namespace TransactionPackage
     public class Employee
     {
         public string Name { get; set; }
-        public int ID { get; set; }
+        public string ID { get; set; }
 
+        public Employee() { }
+        public Employee(string name, string id)
+        {
+            Name = name;
+            ID = id;
+        }
     }
 }
