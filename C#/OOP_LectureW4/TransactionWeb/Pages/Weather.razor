@@ -1,9 +1,4 @@
-﻿@* 
-    inject HttpClient Http: Create an HttpClient (an object that makes HTTP requests)
-    enables sharing data between razor components
-*@
-
-@page "/weather"
+﻿@page "/weather"
 @inject HttpClient Http
 
 <PageTitle>Weather</PageTitle>
@@ -28,7 +23,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts) //html
+            @foreach (var forecast in forecasts)
             {
                 <tr>
                     <td>@forecast.Date.ToShortDateString()</td>
@@ -42,11 +37,6 @@ else
 }
 
 @code {
-    //data
-        //special method - inherited 
-        // called automatically by the framework (1st load the page)
-        //override is used to overwrite the inherited method
-
     private WeatherForecast[]? forecasts;
 
     protected override async Task OnInitializedAsync()
@@ -62,7 +52,6 @@ else
 
         public string? Summary { get; set; }
 
-        //method (lambda expression)
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
 }
