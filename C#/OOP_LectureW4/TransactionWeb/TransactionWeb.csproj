@@ -14,6 +14,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TransactionPackage\TransactionPackage.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="TransactionPackage">
       <HintPath>..\..\OOPWeek4\TransactionPackage\bin\Debug\net8.0\TransactionPackage.dll</HintPath>
     </Reference>
