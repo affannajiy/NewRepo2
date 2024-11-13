@@ -32,5 +32,4 @@ jobList.ReportAllJobs();
 Account account = new Account();
 account.AddPayable(rjob);
 account.AddPayable(otjob);
-account.AddPayable(job);
 Console.WriteLine(account.Total());

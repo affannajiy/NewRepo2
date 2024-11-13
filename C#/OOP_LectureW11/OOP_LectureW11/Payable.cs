@@ -9,9 +9,6 @@ namespace OOP_LectureW11
     //Interface: a contract, all methods inside are 100% abstract
     public interface Payable
     {
-        float CalcCost()
-        { 
-            return 0.0f;
-        }
+        float CalcCost();
     }
 }
