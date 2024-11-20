@@ -30,6 +30,9 @@ jobList.AddJob(otjob);
 jobList.ReportAllJobs();
 
 Account account = new Account();
-account.AddPayable(rjob);
-account.AddPayable(otjob);
-Console.WriteLine(account.Total());
+//account.AddPayable(rjob);
+//account.AddPayable(otjob);
+//Console.WriteLine(account.Total());
+
+FoodProduct fp = new FoodProduct();
+account.AddPayable(fp);

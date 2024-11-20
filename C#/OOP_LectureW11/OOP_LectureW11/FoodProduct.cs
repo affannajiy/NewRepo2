@@ -11,8 +11,8 @@ namespace OOP_LectureW11
         public float UnitAmount { get; set; }
         public float UnitPrice { get; set; }
 
-        // Calculate Cost
-        public float CalcCost()
+        //Calculate Cost (contract fullfilled)
+        public float CalcCost() 
         {
             return UnitAmount * UnitPrice;
         }

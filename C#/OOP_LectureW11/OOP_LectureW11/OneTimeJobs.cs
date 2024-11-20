@@ -10,6 +10,7 @@ namespace OOP_LectureW11
     {
         //Inheritance from superclass Job
         //We want to show OneTimeJobs as a kind of Job (subclass)
+        //We want to show OneTimeJobs as a kind of Payable
         public DateTime Date { get; set; }
 
         //ReportOTJob (Special Report for OneTimeJobs)
