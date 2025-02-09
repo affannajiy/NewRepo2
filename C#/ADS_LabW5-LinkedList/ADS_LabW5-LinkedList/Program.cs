@@ -13,10 +13,10 @@ namespace ADS_LinkedList
             LinkedList list = new LinkedList();
             int choice, value, position;
 
+            Console.WriteLine("----Linked List Program----");
+
             do
-            {
-                Console.WriteLine("----Linked List Program----");
-                
+            {   
                 //Menu
                 Console.WriteLine("\nMenu:");
                 Console.WriteLine("1. Insert at Start");
@@ -27,27 +27,27 @@ namespace ADS_LinkedList
                 Console.WriteLine("6. Delete Specific Node");
                 Console.WriteLine("7. Search Node");
                 Console.WriteLine("8. Display List");
-                Console.WriteLine("9. Exit\n");
+                Console.WriteLine("9. Exit");
 
-                Console.WriteLine("Enter your choice: ");
+                Console.Write("\nEnter your choice: ");
                 choice = Convert.ToInt32(Console.ReadLine());
 
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("Enter the value to be inserted: ");
+                        Console.Write("Enter the value to be inserted: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.InsertAtStart(value);
                         break;
                     case 2:
-                        Console.WriteLine("Enter the value to be inserted: ");
+                        Console.Write("Enter the value to be inserted: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.InsertAtEnd(value);
                         break;
                     case 3:
-                        Console.WriteLine("Enter the value to be inserted: ");
+                        Console.Write("Enter the value to be inserted: ");
                         value = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter the position: ");
+                        Console.Write("Enter the position: ");
                         position = Convert.ToInt32(Console.ReadLine());
                         list.InsertInMiddle(value, position);
                         break;
@@ -58,12 +58,12 @@ namespace ADS_LinkedList
                         list.DeleteAtEnd();
                         break;
                     case 6:
-                        Console.WriteLine("Enter the value to be deleted: ");
+                        Console.Write("Enter the value to be deleted: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.DeleteByValue(value);
                         break;
                     case 7:
-                        Console.WriteLine("Enter the value to be searched: ");
+                        Console.Write("Enter the value to be searched: ");
                         value = Convert.ToInt32(Console.ReadLine());
                         list.Search(value);
                         break;
