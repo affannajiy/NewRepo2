@@ -1,20 +1,27 @@
 ﻿using System;
 
-namespace ADS_LabW5
+/*
+Name        : 'Affan Najiy Bin Rusdi
+Student ID  : 22010453
+*/
+namespace ADS_ListArray
 {
     class Program
     {
-        //Variables
+        //Use Static variables and array (share between methods)
         static int[] arr;
         static int size = 0;
         static int maxLength;
 
+        //Main
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the maximum length of the array: ");
+            Console.WriteLine("----List Array Program----");
+            Console.Write("Enter the maximum length of the array: ");
             maxLength = Convert.ToInt32(Console.ReadLine());
             arr = new int[maxLength];
 
+            //Menu
             int choice;
             do
             {
@@ -26,30 +33,31 @@ namespace ADS_LabW5
                 Console.WriteLine("5. Empty the array");
                 Console.WriteLine("6. Display the array");
                 Console.WriteLine("7. Exit");
-                Console.WriteLine("Enter your choice: ");
+                Console.Write("\nEnter your choice: ");
                 choice = Convert.ToInt32(Console.ReadLine());
 
+                //Options (switch)
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("Enter the element to insert: ");
+                        Console.Write("Enter the element to insert: ");
                         int element = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter the position to insert the element: ");
+                        Console.Write("Enter the position to insert the element: ");
                         int insertposition = Convert.ToInt32(Console.ReadLine());
                         InsertElement(element, insertposition);
                         break;
                     case 2:
-                        Console.WriteLine("Enter the position of the element to delete: ");
+                        Console.Write("Enter the position of the element to delete: ");
                         int deleteposition = Convert.ToInt32(Console.ReadLine());
                         DeleteElement(deleteposition);
                         break;
                     case 3:
-                        Console.WriteLine("Enter the position of the element to find: ");
+                        Console.Write("Enter the position of the element to find: ");
                         int findposition = Convert.ToInt32(Console.ReadLine());
                         FindElement(findposition);
                         break;
                     case 4:
-                        Console.WriteLine("Enter the element to find the index: ");
+                        Console.Write("Enter the element to find the index: ");
                         int findelement = Convert.ToInt32(Console.ReadLine());
                         FindIndex(findelement);
                         break;
@@ -67,9 +75,10 @@ namespace ADS_LabW5
                         Console.WriteLine("Invalid choice. Please try again.");
                         break;
                 }
-            } while (true);
+            } while (choice != 7);
         }
 
+        //Insert Method
         static void InsertElement(int element, int insertposition)
         {
             if (size == maxLength)
@@ -92,6 +101,7 @@ namespace ADS_LabW5
             }
         }
 
+        //Delete Method
         static void DeleteElement(int deleteposition)
         {
             if (size == 0)
@@ -113,6 +123,7 @@ namespace ADS_LabW5
             }
         }
 
+        //FindElement Method
         static void FindElement(int findposition)
         {
             if (findposition >= 0 && findposition < size)
@@ -126,6 +137,7 @@ namespace ADS_LabW5
             }
         }
 
+        //FindIndex Method
         static void FindIndex(int findelement)
         {
             int index = Array.IndexOf(arr, findelement);
@@ -139,12 +151,14 @@ namespace ADS_LabW5
             }
         }
 
+        //EmptyArray Method
         static void EmptyArray()
         {
             size = 0;
             Console.WriteLine("Array has been emptied.");
         }
 
+        //DisplayArray Method
         static void DisplayArray()
         {
             if (size == 0)
@@ -156,7 +170,7 @@ namespace ADS_LabW5
                 Console.WriteLine("Array elements:");
                 for (int k = 0; k < size; k++)
                 {
-                    Console.Write(arr[k] + " ");
+                    Console.Write($"[{arr[k]}]" + " ");
                 }
                 Console.WriteLine();
             }
