@@ -56,12 +56,12 @@ namespace ADS_LabW7_Tree
             {
                 root.Left = Insert(root.Left, data);
             }
-            
+
             else if (data > root.Data) //If the data is greater than root
             {
                 root.Right = Insert(root.Right, data);
             }
-            
+
             return root;
         }
 
